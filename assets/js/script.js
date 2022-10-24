@@ -17,10 +17,10 @@ class Slider {
         this.$items = $items;
         this.$activeItem = this.$items.first();
         this.$activeItem.addClass("slide-active");
-        this.$activeItem.find(".healthcare__slider--item-image").addClass("image-from-left");
+        this.$activeItem.find(".tourism__slider--item-image").addClass("image-from-left");
         let thisSlider = this,
-            $arrowPrev = $controls.find(".healthcare__slider--info-controls-prev"),
-            $arrowNext = $controls.find(".healthcare__slider--info-controls-next");
+            $arrowPrev = $controls.find(".tourism__slider--info-controls-prev"),
+            $arrowNext = $controls.find(".tourism__slider--info-controls-next");
 
         this.$slideNumber = $controls.find(".js-slides-counter");
         this.updateSlideNumber(this.$activeItem.index());
@@ -46,13 +46,13 @@ class Slider {
         this.clearClasses();
         this.$activeItem = $next.length > 0 ? $next : this.$items.first();
         this.$activeItem.addClass("slide-active");
-        this.$activeItem.find(".healthcare__slider--item-image").addClass("image-from-left");
+        this.$activeItem.find(".tourism__slider--item-image").addClass("image-from-left");
     }
 
     prev() {
         let $prev = this.$activeItem.prev();
         this.clearClasses();
-        this.$activeItem.find(".healthcare__slider--item-image").addClass("image-to-right");
+        this.$activeItem.find(".tourism__slider--item-image").addClass("image-to-right");
         this.$activeItem = $prev.length > 0 ? $prev : this.$items.last();
         this.$activeItem.addClass("slide-active");
     }
@@ -63,7 +63,7 @@ class Slider {
 
     clearClasses() {
         this.$items.removeClass("slide-active");
-        this.$items.find(".healthcare__slider--item-image").removeClass("image-to-right image-from-left image-active");
+        this.$items.find(".tourism__slider--item-image").removeClass("image-to-right image-from-left image-active");
     }
 
     blockControls() {
@@ -124,8 +124,8 @@ $(function () {
     $sliders.each(function () {
         $this = $(this);
         new Slider(
-            $this.find(".healthcare__slider--items .healthcare__slider--item"),
-            $this.find(".healthcare__slider--controls")
+            $this.find(".tourism__slider--items .tourism__slider--item"),
+            $this.find(".tourism__slider--controls")
         );
     });
 
