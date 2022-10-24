@@ -1,0 +1,612 @@
+@media (max-width: 1600px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* HEADER */
+    .tourism__header {
+        grid-template-rows: 680px;
+    }
+
+    /* ABOUT */
+    .tourism__about {
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+
+    /* VIDEO */
+    .tourism__video {
+        padding-bottom: 46px;
+    }
+
+    .tourism__video--wrapper video {
+        max-width: calc(100vw - 80px);
+    }
+
+    /* FACTS */
+    .tourism__facts {
+        padding-top: 75px;
+        padding-bottom: 15px;
+    }
+
+    .tourism__facts--item {
+        padding-bottom: 60px;
+    }
+
+    .tourism__facts--item-number {
+        padding-bottom: 20px;
+    }
+
+    /* CARDS */
+    .tourism__cards--item {
+        padding: 60px;
+        min-height: 400px;
+    }
+
+    .tourism__cards--description {
+        padding-left: 40px;
+    }
+
+    /* SLIDER */
+    .tourism__slider--items {
+        min-height: 800px;
+    }
+
+    .tourism__slider--item-info-description {
+        max-width: 565px;
+    }
+
+    .tourism__slider--item-info {
+        padding: 120px 0 70px 60px;
+        min-height: 800px;
+    }
+
+    .tourism__slider--item-info-title {
+        padding-bottom: 110px;
+    }
+
+    .tourism__slider--controls {
+        bottom: 60px;
+        left: calc(50% + 32px);
+    }
+
+    /* LINKS */
+    .tourism__links {
+        padding-top: 115px;
+        padding-bottom: 85px;
+    }
+
+    .tourism__links--title {
+        padding-bottom: 50px;
+    }
+
+    .tourism__links--items {
+        gap: 0 26px;
+    }
+
+    .tourism__links--item {
+        padding: 80px 45px 50px 45px;
+        min-height: 500px;
+        max-width: 356px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .tourism__header--description-text,
+    .tourism__about--block-text,
+    .tourism__cards--item-description,
+    .tourism__cards--item-description,
+    .tourism__slider--item-info-description-text {
+        font-size: 14px;
+        text-indent: 25px;
+    }
+
+    .tourism__header {
+        grid-template-rows: 668px;
+    }
+
+    .tourism__header--description {
+        padding-left: 32px;
+    }
+
+    .tourism__header--description-title {
+        font-size: 42px;
+    }
+
+    .tourism__header--description-text {
+        max-width: 450px;
+    }
+
+    .tourism__about {
+        padding-top: 140px;
+        padding-bottom: 50px;
+    }
+
+    .tourism__video {
+        padding-bottom: 36px;
+    }
+
+    .tourism__video--wrapper video {
+        max-width: calc(100vw - 64px);
+    }
+
+    .tourism__facts {
+        padding-top: 140px;
+        padding-bottom: 80px;
+    }
+
+    .tourism__facts--item-number {
+        font-size: 75px;
+    }
+
+    .tourism__facts--item-description {
+        font-size: 18px;
+        max-width: 385px;
+    }
+
+    .tourism__cards {
+        flex-direction: column;
+    }
+
+    .tourism__cards--items {
+        flex-direction: row;
+    }
+
+    .tourism__cards--item {
+        flex: 0 0 50%;
+        min-height: 384px;
+        padding: 60px 32px 50px 32px;
+    }
+
+    .tourism__cards--link {
+        flex: 1 0 50%;
+    }
+
+    .tourism__cards--description {
+        font-size: 35px;
+        padding-left: 32px;
+        padding-top: 125px;
+        padding-bottom: 125px;
+    }
+
+    .tourism__cards--description-text {
+        max-width: 712px;
+    }
+
+
+    .tourism__cards--item-title,
+    .tourism__slider--item-info-description-title {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    .tourism__slider--item-info {
+        padding: 80px 32px 60px 32px;
+    }
+
+    .tourism__slider--item-info-title {
+        font-size: 12px;
+        padding-bottom: 170px;
+    }
+
+    .tourism__slider--items {
+        min-height: 768px;
+    }
+
+    .tourism__slider--info-title {
+        padding-bottom: 175px;
+    }
+
+    .tourism__slider--item-info-description-text {
+        padding-bottom: 60px;
+    }
+
+    .tourism__slider--info-description-button {
+        padding: 17px 47px;
+        font-size: 12px;
+    }
+
+    .tourism__links {
+        padding-top: 175px;
+        padding-bottom: 175px;
+    }
+
+    .tourism__links--title {
+        padding-bottom: 45px;
+        font-size: 12px;
+    }
+
+    .tourism__links--items {
+        gap: 0 20px;
+    }
+
+    .tourism__links--item {
+        padding: 35px 24px 25px 24px;
+        min-height: 325px;
+        max-width: 218px;
+        margin-bottom: 30px;
+    }
+
+    .tourism__links--item-info-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .tourism__links--item-info-text {
+        font-size: 14px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .tourism__header {
+        grid-template-rows: 380px 570px;
+    }
+
+    .tourism__header--description {
+        grid-row: 1;
+        grid-column: span 2;
+        justify-content: flex-end;
+        padding-bottom: 70px;
+    }
+
+    .tourism__header--image {
+        grid-column: span 2;
+        background-position: bottom;
+    }
+
+    .tourism__about {
+        padding-top: 100px;
+        padding-bottom: 40px;
+        font-size: 12px;
+    }
+
+    .tourism__about--block-text {
+        font-size: 12px;
+    }
+
+    .tourism__video {
+        padding-bottom: 26px;
+    }
+
+    .tourism__video--wrapper video {
+        max-width: calc(100vw - 48px);
+    }
+
+    .tourism__facts {
+        padding-top: 120px;
+        padding-bottom: 15px;
+    }
+
+    .tourism__cards--description {
+        padding-left: 24px;
+    }
+
+    .tourism__cards--description-text {
+        max-width: 530px;
+    }
+
+    .tourism__cards--item {
+        padding: 80px 40px 65px 24px;
+        min-height: 512px;
+    }
+
+    .tourism__slider--items {
+        min-height: 990px;
+    }
+
+    .tourism__slider--item {
+        flex-direction: column;
+    }
+
+    .tourism__slider--item-info {
+        padding: 40px 24px 60px 24px;
+        min-height: 460px;
+    }
+
+    .tourism__slider--item-info-title {
+        padding-bottom: 60px;
+    }
+
+    .tourism__slider--item-info-description {
+        padding-bottom: 80px;
+    }
+
+    .tourism__slider--item-info-description-text {
+        padding-bottom: 50px;
+    }
+
+    .tourism__slider--item-image {
+        min-height: 512px;
+        background-position: bottom;
+    }
+
+    .tourism__slider--controls {
+        left: 26px;
+    }
+
+    .tourism__links {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    .tourism__links--items {
+        gap: 0 30px;
+    }
+
+    .tourism__links--item {
+        padding: 80px 40px 40px 40px;
+        min-height: 450px;
+        max-width: 345px;
+        margin-bottom: 30px;
+    }
+
+    .tourism__links--item-info-image {
+        width: 122px;
+        height: 122px;
+    }
+
+    .tourism__links--item-info-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 568px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .tourism__header--description-text,
+    .tourism__about--block-text,
+    .tourism__facts--item-description,
+    .tourism__cards--item-description,
+    .tourism__cards--item-description,
+    .tourism__slider--item-info-description-text {
+        text-indent: unset;
+    }
+
+    .tourism__header {
+        grid-template-rows: 250px 320px;
+    }
+
+    .tourism__header--description {
+        padding: 0 0 50px 15px;
+    }
+
+    .tourism__header--description-title {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+
+    .tourism__header--description-text {
+        font-size: 12px;
+    }
+
+    .tourism__about {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .tourism__about--block-text {
+        max-width: 255px;
+    }
+
+    .tourism__video {
+        padding-bottom: 16px;
+    }
+
+    .tourism__facts {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    .tourism__facts--item-description {
+        font-size: 14px;
+        max-width: 250px;
+    }
+
+    .tourism__cards--description {
+        padding: 0 15px 60px 15px;
+    }
+
+    .tourism__cards--description-text {
+        font-size: 22px;
+        max-width: 400px;
+    }
+
+    .tourism__cards--item {
+        padding: 60px 17px 43px 17px;
+        min-height: 320px;
+    }
+
+    .tourism__cards--item-title,
+    .tourism__cards--item-title {
+        padding-bottom: 20px;
+    }
+
+    .tourism__cards--item-image,
+    .tourism__cards--item-image {
+        min-height: 20px;
+        max-width: 20px;
+    }
+
+    .tourism__slider--items {
+        min-height: 670px;
+    }
+
+    .tourism__slider--item-image {
+        max-height: 320px;
+        min-height: unset;
+    }
+
+    .tourism__slider--image {
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .tourism__slider--item-info {
+        padding: 20px 15px 40px 15px;
+        min-height: 350px;
+    }
+
+    .tourism__slider--item-info-title {
+        padding-bottom: 40px;
+    }
+
+    .tourism__slider--item-info-description {
+        max-width: 398px;
+        padding-bottom: 65px;
+    }
+
+    .tourism__slider--item-info-description-title {
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .tourism__slider--item-info-description-text {
+        padding-bottom: 45px;
+        font-size: 12px;
+    }
+
+    .tourism__slider--controls {
+        left: 14px;
+        bottom: 30px;
+    }
+
+    .tourism__links {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .tourism__links--items {
+        gap: 0 20px;
+    }
+
+    .tourism__links--item {
+        padding: 35px 23px 24px 23px;
+        min-height: 355px;
+        max-width: 255px;
+        margin-bottom: 30px;
+    }
+
+    .tourism__links--item-info-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .tourism__links--item-info-text {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .tourism__header {
+        grid-template-rows: 270px 230px;
+    }
+
+    .tourism__about {
+        flex-direction: column;
+    }
+
+    .tourism__about--block-text,
+    .tourism__facts--item-description {
+        max-width: unset;
+    }
+
+    .tourism__video--wrapper video {
+        max-width: calc(100vw - 30px);
+    }
+
+    .tourism__facts--item {
+        flex: 1 0 100%;
+    }
+
+    .tourism__cards--description {
+        font-size: 22px;
+    }
+
+    .tourism__cards--items {
+        grid-row: 2;
+        grid-column: span 2;
+    }
+
+    .tourism__cards--item {
+        padding: 40px 15px 33px 15px;
+        min-height: 285px;
+        flex: 1 0 100%;
+    }
+
+    .tourism__cards--item-title,
+    .tourism__cards--item-title {
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .tourism__cards--item-description,
+    .tourism__cards--item-description {
+        font-size: 12px;
+    }
+
+    .tourism__cards--item-image,
+    .tourism__cards--item-image,
+    .tourism__links--item-arrow {
+        min-height: 15px;
+        max-width: 15px;
+    }
+
+    .tourism__slider--items {
+        min-height: 575px;
+    }
+
+    .tourism__slider--item-image {
+        max-height: 230px;
+    }
+
+    .tourism__slider--item-info-description {
+        padding-bottom: 50px;
+    }
+
+    .tourism__slider--item-info-description-text {
+        padding-bottom: 30px;
+    }
+
+    .tourism__slider--info-description-button,
+    .tourism__slider--info-description-button > a {
+        display: block;
+        text-align: center;
+        width: unset;
+    }
+
+    .tourism__slider--controls {
+        max-width: unset;
+        left: 0;
+        padding: 0 15px;
+    }
+
+    .tourism__links--title {
+        padding-bottom: 40px;
+    }
+
+    .tourism__links--item {
+        padding: 35px 23px 24px 23px;
+        min-height: 355px;
+        max-width: 290px;
+        margin-bottom: 30px;
+    }
+}
