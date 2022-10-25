@@ -75,8 +75,9 @@
     }
 
     /* KITCHEN */
-    .tourism__kitchen--item {
+    .tourism__kitchen--link .tourism__kitchen--item {
         min-height: 800px;
+        padding: 0;
     }
 
     .tourism__kitchen--item-description {
@@ -220,7 +221,7 @@
         max-width: 465px;
     }
 
-    .tourism__kitchen--item {
+    .tourism__kitchen--link .tourism__kitchen--item {
         min-height: 768px;
     }
 
@@ -345,12 +346,12 @@
         left: 26px;
     }
 
-    .tourism__kitchen--item {
+    .tourism__kitchen--link .tourism__kitchen--item {
         flex: 1 0 100%;
     }
 
     .tourism__kitchen--link:nth-child(2n) > .tourism__kitchen--item,
-    .tourism__kitchen--item {
+    .tourism__kitchen--link .tourism__kitchen--item {
         flex-direction: column;
         min-height: 1024px;
     }
@@ -698,7 +699,7 @@
 
     .tourism__kitchen--item,
     .tourism__kitchen--link:nth-child(2n) > .tourism__kitchen--item,
-    .tourism__kitchen--item {
+    .tourism__kitchen--link .tourism__kitchen--item {
         min-height: 570px;
     }
 
