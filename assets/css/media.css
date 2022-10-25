@@ -152,12 +152,10 @@
         max-width: 385px;
     }
 
-    .tourism__cards {
-        flex-direction: column;
-    }
-
     .tourism__cards--items {
-        flex-direction: row;
+        grid-row: 2;
+        grid-column: span 2;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .tourism__cards--item,
@@ -165,10 +163,6 @@
         flex: 0 0 50%;
         min-height: 384px;
         padding: 60px 32px 50px 32px;
-    }
-
-    .tourism__cards--link {
-        flex: 1 0 50%;
     }
 
     .tourism__cards--description {
@@ -301,6 +295,7 @@
         padding-left: 24px;
         padding-top: 100px;
         padding-bottom: 100px;
+        grid-column: span 2;
     }
 
     .tourism__cards--description-text {
@@ -370,10 +365,12 @@
 
     .tourism__place--description {
         padding: 120px 24px;
+        grid-column: span 2;
     }
 
     .tourism__place--items {
         display: grid;
+        grid-column: span 2;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -622,19 +619,22 @@
         flex: 1 0 100%;
     }
 
+    .tourism__cards {
+        grid-template-columns: 1fr;
+    }
+
     .tourism__cards--description {
         font-size: 22px;
     }
 
     .tourism__cards--items {
         grid-row: 2;
-        grid-column: span 2;
+        grid-template-columns: 1fr;
     }
 
     .tourism__cards--item {
         padding: 40px 15px 33px 15px;
         min-height: 285px;
-        flex: 1 0 100%;
     }
 
     .tourism__cards--item-title,
