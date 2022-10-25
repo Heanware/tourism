@@ -268,7 +268,8 @@
 
 .tourism__cards--items .tourism__cards--link:nth-child(odd) {
     grid-column: unset;
-    background: linear-gradient(180deg, #FFE6DE 0%, #FFFAEE 100%);
+    background: linear-gradient(180deg, #E8EDFF 0%, #EBF8FF 100%);
+
 }
 
 .tourism__cards--items .tourism__cards--link:nth-child(odd) .tourism__cards--item-title {
@@ -284,7 +285,7 @@
 }
 
 .tourism__cards--items .tourism__cards--link:nth-child(even) {
-    background: linear-gradient(180deg, #E8EDFF 0%, #EBF8FF 100%);
+    background: linear-gradient(180deg, #FFE6DE 0%, #FFFAEE 100%);
 }
 
 .tourism__cards--item-title,

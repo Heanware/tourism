@@ -166,6 +166,27 @@
         padding: 60px 32px 50px 32px;
     }
 
+    .tourism__cards--items .tourism__cards--link:nth-child(1) {
+        grid-column: span 1;
+    }
+
+
+    .tourism__cards--items .tourism__cards--link:last-child {
+        grid-column: span 2;
+    }
+
+    .tourism__cards--items .tourism__cards--link:nth-child(even) {
+        grid-column: span 1;
+    }
+
+    .tourism__cards--items .tourism__cards--link:nth-child(1) .tourism__cards--item-title {
+        font-size: 20px;
+    }
+
+    .tourism__cards--items .tourism__cards--link:nth-child(1) .tourism__cards--item-description {
+        font-size: 14px;
+    }
+
     .tourism__cards--description {
         font-size: 35px;
         padding-left: 32px;
