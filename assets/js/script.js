@@ -105,7 +105,7 @@ class AnimatedNumber {
         this.isAnimated = true;
         let $number = this.$number,
             animatedNumber = this;
-        console.log($number);
+
         this.$number.easy_number_animate({
             start_value: 0,
             end_value: animatedNumber.sEndValue,

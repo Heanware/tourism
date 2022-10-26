@@ -252,7 +252,7 @@
     flex: 1 0 50%;
 }
 
-.tourism__cards--link:hover .tourism__cards--item-image,
+.tourism__cards--link:hover .tourism__cards--item-arrow,
 .tourism__place--link:hover .tourism__place--item-image,
 .tourism__kitchen--link:hover .tourism__kitchen--item-arrow {
     transform: translate(16px, -16px);
@@ -301,7 +301,7 @@
     flex: 1;
 }
 
-.tourism__cards--item-image,
+.tourism__cards--item-arrow,
 .tourism__place--item-image,
 .tourism__links--item-arrow,
 .tourism__kitchen--item-arrow {
@@ -454,30 +454,34 @@
 
 /* KITCHEN */
 
-.tourism__kitchen--items {
+.tourism__cards:nth-child(7) {
     display: grid;
     grid-column: span 2;
 }
 
-.tourism__kitchen--items .tourism__cards--link:nth-child(odd) {
+.tourism__cards:nth-child(7) .tourism__cards--items {
     grid-column: span 2;
 }
 
-.tourism__kitchen--link {
+.tourism__cards:nth-child(7) .tourism__cards--link:nth-child(odd) {
+    grid-column: span 2;
+}
+
+.tourism__cards:nth-child(7) .tourism__cards--link {
     display: grid;
     grid-column: span 2;
 }
 
-.tourism__cards--link:nth-child(2n) .tourism__cards--item-text {
+.tourism__cards:nth-child(7) .tourism__cards--link:nth-child(2n) .tourism__cards--item-text {
     grid-column: 2;
 }
 
-.tourism__cards--link:nth-child(2n) .tourism__kitchen--item-image {
+.tourism__cards:nth-child(7) .tourism__cards--link:nth-child(2n) .tourism__cards--item-image {
     grid-column: 1;
     grid-row: 1;
 }
 
-.tourism__kitchen--link .tourism__kitchen--item {
+.tourism__cards:nth-child(7) .tourism__cards--item {
     min-height: 1000px;
     padding: 0;
     display: grid;
@@ -485,26 +489,20 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.tourism__kitchen--item-description-title {
+.tourism__cards:nth-child(7) .tourism__cards--items  .tourism__cards--item-title {
     font-size: 50px;
 }
 
-.tourism__kitchen--item-description,
-.tourism__kitchen--item-image {
+.tourism__cards--item-arrow {
     grid-column: 2;
 }
 
-.tourism__kitchen--item > .tourism__cards--item-text {
+.tourism__cards:nth-child(7) .tourism__cards--item > .tourism__cards--item-text {
     padding: 150px 60px 105px 60px;
     grid-column: 1;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, #EAECFF 0%, #FFF5F5 100%);
-}
-
-.tourism__kitchen--item .tourism__cards--item-title,
-.tourism__kitchen--items .tourism__kitchen--item:nth-child(1) .tourism__cards--item-title {
-    font-size: 50px;
 }
 
 /* PLACE */
