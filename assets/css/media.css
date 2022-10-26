@@ -250,9 +250,11 @@
     .tourism__cards--items .tourism__cards--link:nth-last-child(2) .tourism__cards--item-title {
         font-size: 20px;
     }
-    .tourism__cards--items .tourism__cards--link:nth-child(odd) .tourism__cards--item-title{
+
+    .tourism__cards--items .tourism__cards--link:nth-child(odd) .tourism__cards--item-title {
         font-size: 20px;
     }
+
     .tourism__cards--items .tourism__cards--link:last-child .tourism__cards--item-title {
         font-size: 24px;
     }
@@ -261,6 +263,37 @@
         font-size: 20px;
     }
 
+    .tourism__cards:nth-child(7) .tourism__cards--items .tourism__cards--item-title {
+        font-size: 35px;
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--description {
+        grid-column: 1;
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--items {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:last-child {
+        grid-column: span 2;
+
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:last-child .tourism__cards--item-title {
+        grid-column: span 2;
+        font-size: 20px;
+
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:nth-child(odd) {
+        grid-column: unset;
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:nth-child(1) {
+        grid-column: span 2;
+    }
 }
 
 @media (max-width: 768px) {
@@ -362,60 +395,77 @@
         left: 26px;
     }
 
-    .tourism__kitchen--link .tourism__kitchen--item {
-        flex: 1 0 100%;
+    .tourism__cards:nth-child(7) .tourism__cards--link .tourism__cards--item {
+        grid-template-rows: repeat(2, 512px);
     }
 
-    .tourism__kitchen--link:nth-child(2n) > .tourism__kitchen--item,
-    .tourism__kitchen--link .tourism__kitchen--item {
-        flex-direction: column;
-        min-height: 1024px;
+    .tourism__cards:nth-child(7) .tourism__cards--item .tourism__cards--item-text {
+        grid-column: span 2;
+        grid-row: 1;
     }
 
-    .tourism__kitchen--item-description {
+    .tourism__cards:nth-child(7) .tourism__cards--item .tourism__cards--item-image {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    .tourism__cards:nth-child(7) .tourism__cards--items .tourism__cards--link {
+        grid-column: span 2;
+    }
+
+    .tourism__cards:nth-child(7) .tourism__cards--link:nth-child(2n) .tourism__cards--item-text {
+        grid-column: span 2;
+    }
+
+    .tourism__cards:nth-child(7) .tourism__cards--link:nth-child(2n) .tourism__cards--item-image {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    .tourism__cards:nth-child(7) .tourism__cards--item > .tourism__cards--item-text {
         padding: 80px 24px 65px 24px;
     }
 
-    .tourism__place {
-        flex-direction: column;
-    }
-
-    .tourism__place--description {
+    .tourism__cards:nth-child(8) .tourism__cards--description {
         padding: 120px 24px;
         grid-column: span 2;
     }
 
-    .tourism__place--items {
+    .tourism__cards:nth-child(8) .tourism__cards--items {
         display: grid;
         grid-column: span 2;
+        grid-row: 2;
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .tourism__cards--items .tourism__cards--link:nth-child(even) {
+        grid-column: unset;
+    }
 
-    .tourism__place--link:nth-child(1) {
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(1) {
         grid-row: span 2;
         grid-column: 1;
 
     }
 
-    .tourism__place--link:nth-child(1) > .tourism__place--item {
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:nth-child(odd) {
+        grid-column: unset;
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(1) > .tourism__cards--item {
         height: 100%;
     }
 
-    .tourism__place--item {
+    .tourism__cards:nth-child(8) .tourism__cards--item {
         min-height: 256px;
         padding: 40px 24px 35px 24px;
     }
 
-    .tourism__place--link:nth-child(5n) .tourism__place--item,
-    .tourism__place--link:nth-child(1) .tourism__place--item {
-        padding: 80px 24px 65px 24px;
-    }
-
-    .tourism__place--link:nth-child(5n) {
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(5n) {
         grid-row: span 2;
         grid-column: 2;
     }
+
 }
 
 @media (max-width: 568px) {
