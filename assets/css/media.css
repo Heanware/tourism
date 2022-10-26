@@ -686,6 +686,10 @@
         flex: 1 0 100%;
     }
 
+    .tourism__cards--items .tourism__cards--link:nth-child(1) {
+        grid-column: span 2;
+    }
+
     .tourism__cards {
         grid-template-columns: 1fr;
     }
@@ -698,7 +702,14 @@
         grid-row: 2;
         grid-template-columns: 1fr;
     }
-
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link,
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:nth-child(odd){
+        grid-column: span 2;
+        max-height: 160px;
+    }
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:first-child{
+        max-height: 320px;
+    }
     .tourism__cards--item {
         padding: 40px 15px 33px 15px;
         min-height: 285px;
@@ -786,30 +797,30 @@
         grid-template-columns: auto;
     }
 
-    .tourism__place--link:nth-child(1) .tourism__place--item {
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(1) .tourism__place--item {
         padding-top: 40px;
         padding-bottom: 33px;
         min-height: 285px;
     }
 
-    .tourism__place--link:nth-child(5n) .tourism__place--item-title,
-    .tourism__place--link:nth-child(1) .tourism__place--item-title,
-    .tourism__place--item-title {
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(5n) .tourism__place--item-title,
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(1) .tourism__place--item-title,
+    .tourism__cards:nth-child(8) .tourism__cards--link .tourism__place--item-title {
         padding-bottom: 20px;
     }
 
-    .tourism__place--link:nth-child(5n) .tourism__place--item {
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(5n) .tourism__place--item {
         padding: 30px 15px 23px 15px;
     }
 
-    .tourism__place--link:nth-child(5n) {
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(5n) {
         min-height: unset;
         padding: inherit;
         grid-row: unset;
         grid-column: unset;
     }
 
-    .tourism__place--link:nth-child(5n) .tourism__place--item-title {
+    .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(5n) .tourism__place--item-title {
         font-size: 14px;
     }
 }
