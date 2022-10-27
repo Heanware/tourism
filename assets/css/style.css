@@ -489,7 +489,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.tourism__cards:nth-child(7) .tourism__cards--items  .tourism__cards--item-title {
+.tourism__cards:nth-child(7) .tourism__cards--items .tourism__cards--item-title {
     font-size: 50px;
 }
 

@@ -731,6 +731,10 @@
         min-height: 160px;
     }
 
+    .tourism__cards:nth-child(8) .tourism__cards--description {
+        padding: 80px 15px 45px 15px
+    }
+
     .tourism__cards--item-title,
     .tourism__cards--item-title {
         padding-bottom: 10px;
@@ -786,31 +790,26 @@
         padding-bottom: 15px;
     }
 
+    .tourism__cards:nth-child(7) .tourism__cards--link .tourism__cards--item {
+        grid-template-rows: 390px 178px;
+        min-height: unset;
+    }
+
+    .tourism__cards:nth-child(7) .tourism__cards--link .tourism__cards--item .tourism__cards--item-text {
+        padding: 40px 15px 33px 15px;
+    }
+
+    .tourism__cards:nth-child(7) .tourism__cards--link .tourism__cards--item .tourism__cards--item-text .tourism__cards--item-title {
+        padding-bottom: 20px;
+    }
+
+    .tourism__cards:nth-child(7) .tourism__cards--item .tourism__cards--item-image {
+        background-position: center;
+        background-size: cover;
+    }
+
     .tourism__cards--items {
         flex-direction: column;
-    }
-
-    .tourism__kitchen--item,
-    .tourism__kitchen--link:nth-child(2n) > .tourism__kitchen--item,
-    .tourism__kitchen--link .tourism__kitchen--item {
-        min-height: 570px;
-    }
-
-    .tourism__kitchen--item-description {
-        padding: 40px 15px 33px 15px;
-        min-height: 390px;
-    }
-
-    .tourism__kitchen-item-image {
-        max-height: 180px;
-    }
-
-    .tourism__place--description {
-        padding-top: 80px;
-    }
-
-    .tourism__place--items {
-        grid-template-columns: auto;
     }
 
     .tourism__cards:nth-child(8) .tourism__cards--link:nth-child(1) .tourism__place--item {
