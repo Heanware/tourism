@@ -79,20 +79,20 @@ class AnimatedNumber {
 
     $numberWrapper;
     $number;
-    sEndValue;
+    endValue;
     isAnimated = false;
 
     constructor($numberWrapper) {
-        const regExp = new RegExp('[0-9]+');
+        const regExp = new RegExp("[0-9]+");
         let offset = $numberWrapper.offset().top,
             animatedNumber = this,
-            sNumber = $numberWrapper.data("number").toString(),
-            arSymbals = sNumber.replace(regExp, "").split("");
+            number = $numberWrapper.data("number").toString(),
+            symbals = number.replace(regExp, "").split("");
         this.$numberWrapper = $numberWrapper;
         this.$number = $numberWrapper.find(".number");
-        this.sEndValue = sNumber.match(regExp);
-        $numberWrapper.find(".number-prefix").text(arSymbals[0]);
-        $numberWrapper.find(".number-suffix").text(arSymbals[1]);
+        this.endValue = number.match(regExp);
+        $numberWrapper.find(".number-prefix").text(symbals[0]);
+        $numberWrapper.find(".number-suffix").text(symbals[1]);
         $window.on("scroll", function () {
             if ($(this).scrollTop() > offset - numbersBeforeAnimation && !animatedNumber.isAnimated) {
                 animatedNumber.animate();
@@ -108,7 +108,7 @@ class AnimatedNumber {
 
         this.$number.easy_number_animate({
             start_value: 0,
-            end_value: animatedNumber.sEndValue,
+            end_value: animatedNumber.endValue,
             duration: 800,
             delimiter: '',
         });
