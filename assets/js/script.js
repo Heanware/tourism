@@ -106,7 +106,7 @@ class AnimatedNumber {
         let $number = this.$number,
             animatedNumber = this;
 
-        this.$number.easy_number_animate({
+        $number.easy_number_animate({
             start_value: 0,
             end_value: animatedNumber.endValue,
             duration: 800,
