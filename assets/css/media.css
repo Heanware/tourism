@@ -686,6 +686,7 @@
         flex: 1 0 100%;
     }
 
+    .tourism__cards--items .tourism__cards--link:nth-child(even),
     .tourism__cards--items .tourism__cards--link:nth-child(1) {
         grid-column: span 2;
     }
@@ -694,25 +695,40 @@
         grid-template-columns: 1fr;
     }
 
-    .tourism__cards--description {
-        font-size: 22px;
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:last-child .tourism__cards--item-title,
+    .tourism__cards--items .tourism__cards--link:nth-child(even) .tourism__cards--item-title,
+    .tourism__cards--items .tourism__cards--link:nth-child(odd) .tourism__cards--item-title,
+    .tourism__cards--item-title {
+        font-size: 16px;
+    }
+
+    .tourism__cards--items .tourism__cards--link:nth-child(1) .tourism__cards--item-description,
+    .tourism__cards--item-description {
+        font-size: 12px;
     }
 
     .tourism__cards--items {
         grid-row: 2;
         grid-template-columns: 1fr;
     }
+
     .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link,
-    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:nth-child(odd){
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:nth-child(odd) {
         grid-column: span 2;
         max-height: 160px;
     }
-    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:first-child{
-        max-height: 320px;
-    }
-    .tourism__cards--item {
-        padding: 40px 15px 33px 15px;
+
+    .tourism__cards:nth-child(8) .tourism__cards--items .tourism__cards--link:first-child {
         min-height: 285px;
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--link:first-child .tourism__cards--item {
+        padding: 40px 15px 33px 15px;
+    }
+
+    .tourism__cards:nth-child(8) .tourism__cards--link .tourism__cards--item {
+        padding: 20px 15px 13px 15px;
+        min-height: 160px;
     }
 
     .tourism__cards--item-title,
